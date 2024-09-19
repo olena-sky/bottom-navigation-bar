@@ -62,7 +62,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  margin-inline: auto;
+  margin-inline: 1.5rem;
 }
 
 /* Remove the property of 100vh, when inserting its content */
@@ -202,6 +202,15 @@ a {
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
-
+@media screen and (min-width: 450px){
+  .nav{
+    width: 350px;
+  }
+}
 
 /* For large devices */
+@media screen and (min-width: 1150px){
+  .container{
+    margin-inline: auto;
+  }
+}
