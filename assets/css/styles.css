@@ -133,6 +133,23 @@ a {
   transition: transform .5s cubic-bezier(.5, 1.8, .4, .8);
 }
 
+.nav__expand-list li{
+  transform: translateY(-3rem);
+  transition: transform .4s;
+}
+
+.nav__expand-list li:nth-child(1){
+  transition-delay: .2s;
+}
+
+.nav__expand-list li:nth-child(2){
+  transition-delay: .3s;
+}
+
+.nav__expand-list li:nth-child(3){
+  transition-delay: .4s;
+}
+
 .nav__expand-link{
   color: var(--text-color);
   display: flex;
@@ -155,10 +172,15 @@ a {
 }
 
 /* Show list */
-
+.show-list,
+.show-list  li{
+  transform: translateY(0);
+}
 
 /* Rotate icon */
-
+.rotate-icon{
+  transform: rotate(135deg);
+}
 
 /* Active link */
 
