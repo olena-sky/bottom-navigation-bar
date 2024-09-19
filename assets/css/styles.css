@@ -65,6 +65,8 @@ a {
   margin-inline: auto;
 }
 
+/* Remove the property of 100vh, when inserting its content */
+
 .section{
   height: 100vh;
   padding-block: 2.5rem;
@@ -194,7 +196,9 @@ a {
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--white-color);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
